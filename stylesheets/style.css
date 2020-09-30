@@ -1,0 +1,271 @@
+body{
+  background-color: gray;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.diary{
+  display:flex;
+  flex: 1;
+  flex-direction: column;
+}
+.left {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+div {
+  background-color: white;
+  display: flex;
+  flex: 1;
+}
+header {
+  display: flex;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  border: solid;
+  background-color: white;
+}
+.btm {
+  margin-left: 10px;
+  justify-content: center;
+  align-self: flex-end;
+}
+#no {
+  text-decoration: line-through;
+}
+nav {
+  background-color: #cccccc;
+  background: #aaaaaa;
+  position: fixed;
+  margin-top: 50px;
+  height: 100%;
+  width: 150px;
+  border: solid;
+  box-sizing: border-box;
+}
+li {
+  text-align: center;
+  /* margin-left: 45px; */
+  list-style: none;
+  /* hober */
+  overflow: hidden;
+  transition: all 0.2s;
+}
+li:hover {
+  background: gray;
+}
+#past-page, #future-page {
+  display: flex;
+  /* justify-content: center; */
+  cursor: pointer;
+  text-align: center;
+  background: gray;
+  /* hober */
+  overflow: hidden;
+  transition: all 0.2s;
+}
+#past-page:hover, #future-page:hover {
+  opacity: 0.7;
+}
+#text {
+  display: flex;
+  justify-content: center;
+  /* align-self: flex-end;
+  align-items: flex-end; */
+  width: 100%;
+}
+main {
+  background-color: white;
+  flex: 1;
+  border: solid;
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  /* width: 1000px; */
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+  max-width: 800px;
+  /* max-height: 480px; */
+}
+.comic {
+  align-self: center;
+  border: solid #aaaaaa 1px;
+  /* margin-bottom: 9px; */
+}
+aside {
+  background-color: #cccccc;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  width: 150px;
+  margin-top: 50px;
+  border: solid;
+  box-sizing: border-box;
+}
+footer {
+  background-color: white;
+  height: 100px;
+  border: solid;
+  margin-left: 150px;
+  margin-right: 150px;
+  box-sizing: border-box;
+}
+#footID {
+  display: flex;
+}
+.dia{
+  text-align: left;
+  color: #111111;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+h1{
+  margin: 0;
+  text-align: center;
+  font-family: "Comic Sans MS", sans-serif;
+}
+h3{
+  text-align: center;
+}
+h3.menu{
+  margin-bottom: 0em;
+  margin-left: 0px;
+}
+hr{
+  margin: 0;
+  color: black;
+}
+p{
+  background-color: white;
+  text-align: center;
+  margin: 0;
+}
+table{
+  margin: auto;
+  border: 1px black;
+}
+:visited{
+  color: black;
+}
+:link{
+  color: black;
+}
+td{
+  width: 60px;
+}
+a{
+  text-decoration: none;
+}
+.blink{
+  animation: blinkAnime 1s infinite normal;
+}
+.str {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  font-size: 150%;
+  border-bottom: 2px solid #111111;
+  color: red;
+}
+span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(transparent 40%, rgba(0, 255, 0, 0.6) 60%);
+  animation: sample1 3s ease-in infinite; /* anime */
+}
+@keyframes sample1 {
+  0% { right : 100%; }
+  25% { right: 0;}
+  100% { right: 0;}
+}
+@keyframes blinkAnime{
+  0% { opacity: 1;}
+  100% { opacity: 0;}
+}
+@media screen and (max-width: 900px) {
+  body {
+    width: 100%;
+    flex-direction: column;
+  }
+  header {
+    position: static;
+    left: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .btm {
+    flex: 1;
+  }
+  nav {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    bottom: 0;
+    box-sizing: border-box;
+  }
+  h3.menu {
+    display: none;
+  }
+  li {
+    margin-left: 20px;
+  }
+  aside {
+    position: static;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    height: 25px;
+    box-sizing: border-box;
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    flex: 1;
+  }
+  div {
+    flex-direction: column;
+  }
+  main {
+    margin: 0;
+    order: -1;
+  }
+  footer {
+    margin: 0;
+  }
+}
+
+/*
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: .5em .5em 0;
+}
+summary {
+  font-weight: bold;
+  margin: -.5em -.5em 0;
+  padding: .5em;
+}
+
+details[open]  summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: .5em;
+}
+*/

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>add_event_listener</title>
+</head>
+<body>
+  <input placeholder="Enter some text" />
+  <p id="history"></p>
+
+  <script>
+    const input = document.querySelector('input');
+    const history = document.getElementById('history');
+
+    input.addEventListener('change', updateValue);
+
+    function updateValue(e) {
+      history.textContent = e.target.value;
+    }
+  </script>
+</body>
+</html>

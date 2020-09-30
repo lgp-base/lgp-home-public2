@@ -1,0 +1,1 @@
+document.getElementById('testjs').click();
