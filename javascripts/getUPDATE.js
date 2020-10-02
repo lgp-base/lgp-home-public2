@@ -13,9 +13,9 @@ function getUPDATE(diaryID){
   .then((data) => {
     data.reverse();
     data.slice(diaryID).forEach((value) => {
-      console.log(value[3]);
+      // console.log(value[3]);
       thisDAY = value[3];
-      console.log("a=" + thisDAY);
+      // console.log("a=" + thisDAY);
       const params = {
         "year": value[1],
         "month": value[2],
@@ -79,12 +79,12 @@ function getPAGEs(){
   .then((data) => {
     data.reverse();
     var lastID = data[0].id;
-    console.log(lastID);
+    // console.log(lastID);
     return lastID;
   })
   .then((ID) => { // idからpage数を決めてリンクを作る
     ID += 1; // 初期IDが0なので1を加算
-    console.log(ID);
+    // console.log(ID);
     // for (i = 0; i*5 < ID; i++) {
     //   document.getElementById("footID")
     // }

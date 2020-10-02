@@ -209,6 +209,8 @@ span {
   }
   .btm {
     flex: 1;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
   }
   nav {
     position: fixed;
